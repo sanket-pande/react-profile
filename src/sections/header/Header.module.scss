@@ -1,0 +1,23 @@
+.header {
+    padding: 5px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+    }
+}
