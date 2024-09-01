@@ -4,22 +4,22 @@ import styles from './Button.module.scss';
 // Define the prop types for the Button component
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
-    variant: 'primary' | 'secondary' | 'danger';
-    size: 'small' | 'medium' | 'large';
-    icon?: ReactNode;
     className?: string;
+    icon?: ReactNode;
+    size: 'sm' | 'md' | 'lg';
+    variant: 'primary' | 'secondary' | 'danger';
 }
 
 // Button Component with TypeScript
 const Button: React.FC<ButtonProps> = ({
     children,
-    onClick,
-    type = 'button',
-    variant = 'primary',
-    size = 'medium',
+    className,
     disabled = false,
     icon,
-    className,
+    onClick,
+    size = 'md',
+    type = 'button',
+    variant = 'primary',
     ...rest
 }) => {
     return (

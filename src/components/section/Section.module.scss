@@ -1,0 +1,19 @@
+.section {
+    background-color: var(--light-background);
+    color: var(--dark-background);
+    height: 60vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+}

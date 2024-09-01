@@ -1,6 +1,20 @@
+:root {
+  /* Light colours */
+  --light-background: #dbe4ee;
+  --light-colour-primary: #4361ee;
+
+  /* Dark colours */
+  --dark-background: #000b3d;
+
+  /* Other */
+  --orange: #f17300;
+  --indigo: #54008c;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--light-background)
 }

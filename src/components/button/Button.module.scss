@@ -6,17 +6,17 @@
     transition: background-color 0.3s ease;
 
     &--primary {
-        background-color: #007bff;
+        background-color: var(--dark-background);
         color: white;
     }
 
     &--secondary {
-        background-color: #6c757d;
+        background-color: var(--color-secondary);
         color: white;
     }
 
     &--danger {
-        background-color: #dc3545;
+        background-color: var(--color-danger);
         color: white;
     }
 
@@ -25,19 +25,19 @@
     }
 }
 
-.btn--small {
+.btn--sm {
     padding: 5px 10px;
     font-size: 12px;
 }
 
-.btn--medium {
+.btn--md {
     padding: 10px 20px;
     font-size: 14px;
 }
 
-.btn--large {
+.btn--lg {
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .icon {
