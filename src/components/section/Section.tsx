@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { forwardRef, ReactNode } from 'react';
 import styles from './Section.module.scss';
 
 interface SectionProps {
@@ -8,20 +8,19 @@ interface SectionProps {
     title?: string;
 }
 
-const Section: React.FC<SectionProps> = ({
+const Section = forwardRef<HTMLElement, SectionProps>(({
     id,
     children,
     className = '',
     title,
-}) => {
+}, ref) => {
     return (
-        <section className={`${styles.section} ${className}`} id={id}>
+        <section className={`${styles.section} ${className}`} id={id} ref={ref}>
             {title && <h1 className={styles.title}>{title}</h1>}
             <div className={styles.content}>
                 {children}
             </div>
         </section>
     );
-}
-
+});
 export default Section;
