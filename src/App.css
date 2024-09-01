@@ -1,14 +1,10 @@
 :root {
-  /* Light colours */
-  --light-background: #dbe4ee;
-  --light-colour-primary: #4361ee;
-
-  /* Dark colours */
-  --dark-background: #000b3d;
-
-  /* Other */
+  --light: #dbe4ee;
+  --blue: #4361ee;
+  --dark: #000b3d;
   --orange: #f17300;
   --indigo: #54008c;
+  --white: white;
 }
 
 body {
@@ -16,5 +12,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--light-background)
 }

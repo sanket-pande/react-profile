@@ -1,6 +1,6 @@
 .footer {
-    background-color: var(--dark-background);
-    color: white;
+    background-color: var(--dark);
+    color: var(--white);
     padding: 5px;
 
     nav {
@@ -19,7 +19,7 @@
     }
 
     nav ul li a {
-        color: white;
+        color: var(--white);
         text-decoration: none;
     }
 }
