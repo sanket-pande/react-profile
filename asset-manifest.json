@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-profile/static/css/main.40eb7773.css",
-    "main.js": "/react-profile/static/js/main.3f8f52ef.js",
-    "static/js/453.212d198d.chunk.js": "/react-profile/static/js/453.212d198d.chunk.js",
-    "index.html": "/react-profile/index.html",
-    "main.40eb7773.css.map": "/react-profile/static/css/main.40eb7773.css.map",
-    "main.3f8f52ef.js.map": "/react-profile/static/js/main.3f8f52ef.js.map",
-    "453.212d198d.chunk.js.map": "/react-profile/static/js/453.212d198d.chunk.js.map"
+    "main.css": "/static/css/main.40eb7773.css",
+    "main.js": "/static/js/main.24c116f7.js",
+    "static/js/453.212d198d.chunk.js": "/static/js/453.212d198d.chunk.js",
+    "index.html": "/index.html",
+    "main.40eb7773.css.map": "/static/css/main.40eb7773.css.map",
+    "main.24c116f7.js.map": "/static/js/main.24c116f7.js.map",
+    "453.212d198d.chunk.js.map": "/static/js/453.212d198d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40eb7773.css",
-    "static/js/main.3f8f52ef.js"
+    "static/js/main.24c116f7.js"
   ]
 }
