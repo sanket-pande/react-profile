@@ -11,19 +11,23 @@ import { SectionMap, scrollToSection } from '../common/utils';
 const App = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const footerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
 
   SectionMap["about"] = aboutRef;
   SectionMap["contact"] = contactRef;
   SectionMap["hero"] = heroRef;
+  SectionMap["header"] = headerRef;
+  SectionMap["footer"] = footerRef;
 
   return (
     <div className="App">
-      <Header />
+      <Header ref={headerRef} scrollToRef={scrollToSection} />
       <Hero ref={heroRef} scrollToRef={scrollToSection} />
       <About ref={aboutRef} />
       <Contact ref={contactRef} />
-      <Footer />
+      <Footer ref={footerRef} scrollToRef={scrollToSection} />
     </div>
   );
 }

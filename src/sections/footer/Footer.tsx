@@ -1,19 +1,35 @@
-import styles from './Footer.module.scss';
+import { forwardRef } from 'react';
 
-const Footer = () => {
+import styles from './Footer.module.scss';
+import navStyles from '../../common/Navigation.module.scss';
+
+import { SectionProps } from '../../interfaces/SectionProps';
+import Button from '../../components/button/Button';
+
+const Footer = forwardRef<HTMLElement, SectionProps>(({ scrollToRef }, ref) => {
     return (
-        <footer className={styles.footer}>
+        <footer className={`${navStyles.navigation} ${styles.footer}`} ref={ref}>
             <nav>
                 <ul>
-                    <li>Sanket Pande</li>
+                    <Button size={'lg'} variant={'none'} onClick={() => scrollToRef?.('header')}>
+                        Sanket Pande
+                    </Button>
                 </ul>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <Button size={'lg'} variant={'none'} onClick={() => scrollToRef?.('about')}>
+                            About
+                        </Button>
+                    </li>
+                    <li>
+                        <Button size={'lg'} variant={'none'} onClick={() => scrollToRef?.('contact')}>
+                            Contact
+                        </Button>
+                    </li>
                 </ul>
             </nav>
         </footer>
     );
-}
+});
 
 export default Footer;

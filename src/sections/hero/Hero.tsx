@@ -8,7 +8,7 @@ import styles from './Hero.module.scss';
 
 const Hero = forwardRef<HTMLElement, SectionProps>(({ scrollToRef }, ref) => {
     return (
-        <Section className={styles.hero} ref={ref}>
+        <Section className={styles.hero} ref={ref} id="hero">
             <h1 className={styles.title} >
                 Hey, I am Sanket Pande
             </h1>
@@ -16,7 +16,7 @@ const Hero = forwardRef<HTMLElement, SectionProps>(({ scrollToRef }, ref) => {
                 Software Engineer | Web Developer | Full Stack Engineer | Creator
             </p>
 
-            <Button className={styles.cta} variant='primary' size='lg' onClick={() => scrollToRef?.('contact')} >
+            <Button className={styles.cta} variant='primary' size='xl' onClick={() => scrollToRef?.('contact')} >
                 Contact me
             </Button>
         </Section >

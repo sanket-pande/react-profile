@@ -1,9 +1,28 @@
 .btn {
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+    &--sm {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    &--md {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    &--lg {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    &--xl {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
 
     &--primary {
         background-color: var(--dark);
@@ -20,24 +39,22 @@
         color: var(--dark);
     }
 
+    &--link {
+        padding: 0;
+        border-radius: 0;
+        color: var(--dark);
+    }
+
+    &--none {
+        padding: 0;
+        border-radius: 0;
+        background-color: inherit;
+        color: inherit;
+    }
+
     &:hover {
         opacity: 0.9;
     }
-}
-
-.btn--sm {
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-.btn--md {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-.btn--lg {
-    padding: 15px 30px;
-    font-size: 20px;
 }
 
 .icon {

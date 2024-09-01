@@ -6,8 +6,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
     className?: string;
     icon?: ReactNode;
-    size: 'sm' | 'md' | 'lg';
-    variant: 'primary' | 'secondary' | 'danger';
+    size: 'sm' | 'md' | 'lg' | 'xl';
+    variant: 'primary' | 'secondary' | 'danger' | 'link' | 'none';
 }
 
 // Button Component with TypeScript
