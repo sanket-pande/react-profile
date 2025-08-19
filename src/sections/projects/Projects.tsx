@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import Section from '../../components/section/Section';
 import { SectionProps } from '../../interfaces/SectionProps';
+import styles from './Projects.module.scss';
 
 interface Project {
     title: string;
@@ -33,18 +34,18 @@ const Projects = forwardRef<HTMLElement, SectionProps>((_, ref) => {
 
     return (
         <Section id="projects" ref={ref} title="Selected Work">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+            <div className={styles.projectsList}>
                 {projects.map((p) => (
-                    <article key={p.title} style={{ borderRadius: 16, background: 'rgba(255,255,255,0.05)', padding: 16, border: '1px solid rgba(255,255,255,0.1)' }}>
-                        <h3 style={{ margin: 0 }}>{p.title}</h3>
-                        <p style={{ marginTop: 8, opacity: 0.85 }}>{p.desc}</p>
-                        <ul style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 12, listStyle: 'none', padding: 0 }}>
+                    <article key={p.title} className={styles.projectCard}>
+                        <h3>{p.title}</h3>
+                        <p className={styles.projectDesc}>{p.desc}</p>
+                        <ul className={styles.projectTags}>
                             {p.tags.map((t) => (
-                                <li key={t} style={{ fontSize: 12, opacity: 0.9, border: '1px solid rgba(255,255,255,0.2)', borderRadius: 9999, padding: '2px 8px' }}>{t}</li>
+                                <li key={t} className={styles.projectTag}>{t}</li>
                             ))}
                         </ul>
-                        <div style={{ marginTop: 12 }}>
-                            <a href={p.href} onClick={(e) => e.preventDefault()} style={{ fontWeight: 600 }}>View →</a>
+                        <div className={styles.projectLinkWrap}>
+                            <a href={p.href} onClick={(e) => e.preventDefault()} className={styles.projectLink}>View →</a>
                         </div>
                     </article>
                 ))}
