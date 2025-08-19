@@ -22,6 +22,11 @@ const Header = forwardRef<HTMLElement, SectionProps>(({ scrollToRef }, ref) => {
                         </Button>
                     </li>
                     <li>
+                        <Button size={'lg'} variant={'none'} onClick={() => scrollToRef?.('projects')}>
+                            Work
+                        </Button>
+                    </li>
+                    <li>
                         <Button size={'lg'} variant={'none'} onClick={() => scrollToRef?.('contact')}>
                             Contact
                         </Button>
